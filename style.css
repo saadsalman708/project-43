@@ -1,0 +1,65 @@
+:root {
+    --pink-color: #EC00BF;
+}
+
+
+
+
+nav button {
+    background-color: var(--pink-color);
+    border: 3px solid var(--pink-color);
+}
+
+nav button:hover {
+    color: #fff;
+    background-color: #000;
+    border: 3px solid var(--pink-color);
+}
+
+
+
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+}
+
+
+.hero span {
+    color: var(--pink-color);
+}
+
+.hero button {
+    color: var(--pink-color);
+    border: 3px solid var(--pink-color);
+    padding: .8rem 6rem;
+}
+
+.hero button:hover {
+    color: #fff;
+    border: 3px solid var(--pink-color);
+    background-color: var(--pink-color);
+}
+
+.buttons-Section {
+    padding: 10rem 0;
+}
+
+
+.buttons-Section a {
+    border: 2px solid var(--pink-color);
+}
+
+.buttons-Section a:hover {
+    background-color: var(--pink-color);
+}
+
+.buttons-Section li:first-of-type a {
+    background-color: var(--pink-color);
+}
+
+
+
+
+.custom-card {
+    
+}
