@@ -28,16 +28,17 @@ nav button:hover {
     color: var(--pink-color);
 }
 
-.hero button {
+.pink-border-btn {
     color: var(--pink-color);
+    background-color: #171717;
     border: 3px solid var(--pink-color);
     padding: .8rem 6rem;
 }
 
-.hero button:hover {
+.pink-border-btn:hover {
     color: #fff;
-    border: 3px solid var(--pink-color);
     background-color: var(--pink-color);
+    border: 3px solid var(--pink-color);
 }
 
 .buttons-Section {
@@ -58,8 +59,96 @@ nav button:hover {
 }
 
 
+.card1 , .card2 , .card3 , .card4 {
+    height: 60dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all .6s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card1:hover , .card2:hover , .card3:hover , .card4:hover {
+    background-size: 104%;
+    background-position: center 56%;
+}
+
+.card1::before , .card2::before , .card3::before , .card4::before {
+    z-index: 1;
+    content: "";
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    transition: all .3s ease;
+}
+
+.card1:hover::before , .card2:hover::before , .card3:hover::before , .card4:hover::before {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.card1 {
+    background-image: url(https://raw.githubusercontent.com/saadsalman708/project-11/refs/heads/main/assets/images/pictures/earn_tile.jpg);
+}
+
+.card2 {
+    background-image: url(https://raw.githubusercontent.com/saadsalman708/project-11/refs/heads/main/assets/images/pictures/play_tile.jpg);
+}
+
+.card3 {
+    background-image: url(https://raw.githubusercontent.com/saadsalman708/project-11/refs/heads/main/assets/images/pictures/dao_tile.jpg);
+}
+
+.card4 {
+    background-image: url(https://raw.githubusercontent.com/saadsalman708/project-11/refs/heads/main/assets/images/pictures/nft_tile.jpg);
+}
 
 
-.custom-card {
-    
+
+.card1 button , .card2 button , .card3 button , .card4 button {
+    padding: .8rem 3rem;
+}
+
+
+
+
+
+footer {
+    background-color: #171717;
+}
+
+
+footer div div:first-child a {
+    color: #fff;
+    transition: all .2s ease;
+}
+
+footer div div:first-child a:hover {
+    color: var(--pink-color);
+}
+
+footer span a {
+    color: var(--pink-color) !important;
+}
+
+footer p {
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 486px) {
+    .card1 , .card2 , .card3 , .card4 {
+        height: 30dvh;
+    }
 }
